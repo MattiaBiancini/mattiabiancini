@@ -1,17 +1,21 @@
 import { Link, Outlet } from "react-router-dom";
+import "./Layout.css"; // Import the CSS styles
 
 export default function Layout() {
   return (
-    <div>
-      <nav style={{ marginBottom: 20 }}>
-        <Link to="/" style={{ marginRight: 10 }}>Home</Link>
-        <Link to="/about" style={{ marginRight: 10 }}>About</Link>
-        <Link to="/projects" style={{ marginRight: 10 }}>Projects</Link>
-        <Link to="/swimming" style={{ marginRight: 10 }}>Swimming</Link>
-        <Link to="/contacts">Contacts</Link>
+    <>
+      <nav className="navbar">
+        <div className="nav-links">
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/swimming">Swimming</Link>
+          <Link to="/contacts">Contacts</Link>
+        </div>
       </nav>
-      <hr />
-      <Outlet />
-    </div>
+      <div className="content">
+        <Outlet />
+      </div>
+    </>
   );
 }
