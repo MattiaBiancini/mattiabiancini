@@ -226,17 +226,34 @@ const projects = {
     {
       title: "Formula 1 Visualization",
       technologies: [
-        "python",
-        "polars",
-        "bokeh",
+        {
+          name: "Python",
+          link: "https://www.python.org/",
+        },
+        {
+          name: "Polars",
+          link: "https://pola.rs/",
+        },
+        {
+          name: "Bokeh",
+          link: "https://bokeh.org/",
+        },
       ],
       opensource: true,
       description: (
         <>
-          A project to visualize Formula 1 data using advanced data analysis techniques.
+          Formula1Visualization is a project focused on data analysis 
+          and visualization of Formula 1 racing data. The repository likely 
+          includes datasets related to Formula 1, scripts or notebooks for 
+          data cleaning and preprocessing, and a variety of visualizations 
+          to explore and present insights about races, drivers, teams, or 
+          performance trends. The goal is to provide meaningful, interactive, 
+          or illustrative visual analytics for Formula 1 enthusiasts or 
+          data science practitioners interested in motorsport data.
         </>
       ),
       link: "https://github.com/sAndreotti/Formula1Visualization",
+      icon: "github",
       developers: [
         {
           name: "sAndreotti",
@@ -247,9 +264,54 @@ const projects = {
         {
           name: "steq28",
         },
-      ]
+      ],
     },
-    
+    {
+      title: "DataManagmentAsteroids",
+      technologies: [
+        {
+          name: "Python",
+          link: "https://www.python.org/",
+        },
+        {
+          name: "Jupyter",
+          link: "https://jupyter.org/",
+        },
+        {
+          name: "Pandas",
+          link: "https://pandas.pydata.org/",
+        },
+        {
+          name: "Mathplotlib",
+          link: "https://matplotlib.org/",
+        },
+        {
+          name: "Shap",
+          link: "https://shap.readthedocs.io/",
+        },
+      ],
+      opensource: true,
+      description: (
+        <>
+          DataManagementAsteroids is a project that uses a real-world asteroid dataset 
+          to study the impact of data cleaning techniques. The repository includes raw 
+          and "dirty" datasets, Jupyter notebooks for analysis, and scripts for 
+          preprocessing and evaluating the effects of various data management strategies. 
+          The goal is to demonstrate how data cleaning can affect downstream data analysis 
+          or machine learning tasks in the context of asteroid-related data.
+        </>
+      ),
+      link: "https://github.com/MattiaBiancini/DataManagementAsteroids",
+      icon: "github",
+      developers: [
+        {
+          name: "LolloMagicMagia",
+        },
+        {
+          name: "ghero2000",
+        },
+      ],
+    },
   ]
 
 };

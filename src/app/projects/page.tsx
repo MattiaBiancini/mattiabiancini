@@ -1,5 +1,6 @@
 import {
   Avatar,
+  Background,
   Button,
   Column,
   Flex,
@@ -14,6 +15,7 @@ import {
 import { baseURL } from "@/app/resources";
 import { about, person, projects } from "@/app/resources/content";
 import { Meta, Schema } from "@/once-ui/modules";
+import OverlappingAvatars from "@/components/projects/OverlappingAvatars";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -41,16 +43,58 @@ export default function Project() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-	  <Column>
+	  <Column style={{ gap: "2em" }}>
 		{projects.projects.map((project, index) => (
-			<Column key={index}>
-				<Row>
-					<Heading as="h2">{project.title}</Heading>
-					{project.technologies.map((tech, techIndex) => (
-						<img key={techIndex} src={`/svg/${tech}.svg`} width={24} height={24} />
-					))}
+			<Column key={index} style={{ gap: "8px" }}>
+        <Flex
+          style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr auto 1fr',
+            alignItems: 'center',
+          }}
+        >
+          <Flex style={{ justifySelf: 'start' }}>
+            <Heading as="h3" style={{ verticalAlign: "middle" }}>
+            {project.title}
+            {project.opensource && (
+              <>
+                &nbsp;[<a href={project.link}>
+                  <Icon onBackground="neutral-strong" name={project.icon} />
+                </a>]
+              </>
+            )}
+            </Heading>
+          </Flex>
+          <Flex style={{ justifySelf: 'center' }}>
+            <Row style={{ gap: "1em" }}>
+              {project.technologies.map((tech, techIndex) => (
+                <Flex
+                  key={techIndex}
+                  background="info-strong"
+                  border="neutral-alpha-medium"
+                  radius="m-4"
+                  shadow="l"
+                  padding="4"
+                  horizontal="center"
+                >
+                  <a href={tech.link} style={{ width: 24, height: 24 }}>
+                    <img
+                      src={`/svg/${tech.name}.svg`}
+                      width={24}
+                      height={24}
+                    />
+                  </a>
+                </Flex>
+              ))}
+            </Row>
+          </Flex>
+          <Flex style={{ justifySelf: 'end' }}>
+            <OverlappingAvatars developers={project.developers} />
+          </Flex>
+        </Flex>
+				<Row style={{ alignItems: "center", justifyContent: "space-between" }}>
 				</Row>
-				<Text>{project.description}</Text>
+				<Text variant="heading-default-xs" onBackground="neutral-weak">{project.description}</Text>
 			</Column>
 		))}
 	  </Column>
