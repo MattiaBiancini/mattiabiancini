@@ -1,8 +1,19 @@
-import { Column } from "@/once-ui/components";
+import {
+  Avatar,
+  Button,
+  Column,
+  Flex,
+  Heading,
+  Icon,
+  IconButton,
+  Row,
+  SmartImage,
+  Tag,
+  Text,
+} from "@/once-ui/components";
 import { baseURL } from "@/app/resources";
 import { about, person, projects } from "@/app/resources/content";
 import { Meta, Schema } from "@/once-ui/modules";
-import { Projects } from "@/components/work/Projects";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -30,7 +41,19 @@ export default function Project() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Projects />
+	  <Column>
+		{projects.projects.map((project, index) => (
+			<Column key={index}>
+				<Row>
+					<Heading as="h2">{project.title}</Heading>
+					{project.technologies.map((tech, techIndex) => (
+						<img key={techIndex} src={`/svg/${tech}.svg`} width={24} height={24} />
+					))}
+				</Row>
+				<Text>{project.description}</Text>
+			</Column>
+		))}
+	  </Column>
     </Column>
   );
 }

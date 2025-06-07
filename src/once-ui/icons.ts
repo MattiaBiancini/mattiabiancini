@@ -94,7 +94,7 @@ export const iconLibrary: Record<string, IconType> = {
   mysql: DiMysql,
   android: DiAndroid,
   docker: DiDocker,
-  javascript: DiJsBadge
+  javascript: DiJsBadge,
 };
 
 export type IconLibrary = typeof iconLibrary;

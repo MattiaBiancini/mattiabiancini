@@ -203,11 +203,11 @@ const about = {
         description: <>Proficient in JavaScript for web development, including frameworks like React.</>,
         icon: "javascript",
       },
-      {
-        title: "AndroidStudio",
-        description: <>Experienced in Android app development using Android Studio.</>,
-        icon: "android",
-      },
+      // {
+      //   title: "AndroidStudio",
+      //   description: <>Experienced in Android app development using Android Studio.</>,
+      //   icon: "android",
+      // },
       {
         title: "Docker",
         description: <>Familiar with Docker for containerization and deployment.</>,
@@ -222,6 +222,35 @@ const projects = {
   label: "Projects",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
+  projects: [
+    {
+      title: "Formula 1 Visualization",
+      technologies: [
+        "python",
+        "polars",
+        "bokeh",
+      ],
+      opensource: true,
+      description: (
+        <>
+          A project to visualize Formula 1 data using advanced data analysis techniques.
+        </>
+      ),
+      link: "https://github.com/sAndreotti/Formula1Visualization",
+      developers: [
+        {
+          name: "sAndreotti",
+        },
+        {
+          name: "gbrsni",
+        },
+        {
+          name: "steq28",
+        },
+      ]
+    },
+    
+  ]
 
 };
 
