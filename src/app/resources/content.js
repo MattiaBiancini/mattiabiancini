@@ -185,7 +185,7 @@ const about = {
     skills: [
       {
         title: "Java",
-        description: <>Proficient in Java programming, with a focus on OOP.</>,
+        description: <>Experienced in Java programming, with a focus on OOP.</>,
         icon: "java",
       },
       {
@@ -222,8 +222,7 @@ const projects = {
   label: "Projects",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /projects routes
+
 };
 
 const swimming = {
