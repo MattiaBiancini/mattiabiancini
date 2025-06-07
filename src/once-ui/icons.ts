@@ -42,6 +42,15 @@ import { FaDiscord, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 import { IoWaterOutline } from "react-icons/io5";
 
+import { 
+  DiJava,
+  DiPython,
+  DiMysql,
+  DiAndroid,
+  DiDocker,
+  DiJsBadge,
+} from "react-icons/di";
+
 export const iconLibrary: Record<string, IconType> = {
   chevronUp: HiChevronUp,
   chevronDown: HiChevronDown,
@@ -80,6 +89,12 @@ export const iconLibrary: Record<string, IconType> = {
   project: HiOutlineBriefcase,
   contact: HiOutlineChatBubbleOvalLeft,
   water: IoWaterOutline,
+  java: DiJava,
+  python: DiPython,
+  mysql: DiMysql,
+  android: DiAndroid,
+  docker: DiDocker,
+  javascript: DiJsBadge
 };
 
 export type IconLibrary = typeof iconLibrary;

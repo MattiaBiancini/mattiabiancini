@@ -71,17 +71,20 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
-    display: true,
+    display: false,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Hi, I'm {person.firstName}, a passionate design engineer with a knack for creating
+        intuitive user experiences. I thrive at the intersection of design and technology, where I
+        can bring ideas to life through innovative design solutions. My journey has taken me from
+        studying software engineering to leading design projects that enhance user engagement and
+        streamline workflows. When I'm not designing, you can find me exploring new technologies or
+        working on personal projects that push the boundaries of what's possible in design.
       </>
     ),
   },
@@ -90,41 +93,59 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "InSport Rane Rosse",
+        timeframe: "November 2023 - Present",
+        role: "Swimming Coach (FINA Junior & Senior)",
+        description: (
+          <>
+            Participated in the following events:
+          </>
+        ),
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Spring Italian Championships 2025 (Criteria)
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Summer Italian Championships 2024 
+          </>,
+          <>
+            Spring Italian Championships 2024 (Criteria)
+          </>,
+          <>
+            Spring Regional Championships 2025
+          </>,
+          <>
+            Summer Regional Championships 2024
+          </>,
+          <>
+            Spring Regional Championships 2024
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/work/insport.jpeg",
+            alt: "InSport - Lifesaving Spring Italian Championships 2025",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "ASA Cinisello Balsamo",
+        timeframe: "September 2022 - July 2023",
+        role: "Swimming Coach (Under 13)",
+        description: (
+          <>
+            Participated in the following events:
+          </>
+        ),
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Summer Regional Championships 2023
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Spring Regional Championships 2023
           </>,
         ],
         images: [],
@@ -136,12 +157,25 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Università della Svizzera italiana (USI)",
+        timeframe: "September 2024 - Present",
+        description: <>Master in Informatics (Double Degree Program)</>,
+        location: <>Lugano (CH)</>,
+        vote: <>-/10.0</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Università degli Studi di Milano - Bicocca",
+        timeframe: "September 2023 - Present",
+        description: <>Master in Computer Science</>,
+        location: <>Milan (IT)</>,
+        vote: <>-/110</>,
+      },
+      {
+        name: "Università degli Studi di Milano - Bicocca",
+        timeframe: "September 2021 - July 2023",
+        description: <>Bachelor in Computer Science</>,
+        location: <>Milan (IT)</>,
+        vote: <>102/110</>,
       },
     ],
   },
@@ -150,36 +184,34 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Java",
+        description: <>Proficient in Java programming, with a focus on OOP.</>,
+        icon: "java",
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Python",
+        description: <>Experienced in Python programming, with a focus on data analysis and machine learning.</>,
+        icon: "python",
+      },
+      {
+        title: "MySQL",
+        description: <>Skilled in MySQL database management and query optimization.</>,
+        icon: "mysql",
+      },
+      {
+        title: "JavaScript",
+        description: <>Proficient in JavaScript for web development, including frameworks like React.</>,
+        icon: "javascript",
+      },
+      {
+        title: "AndroidStudio",
+        description: <>Experienced in Android app development using Android Studio.</>,
+        icon: "android",
+      },
+      {
+        title: "Docker",
+        description: <>Familiar with Docker for containerization and deployment.</>,
+        icon: "docker",
       },
     ],
   },

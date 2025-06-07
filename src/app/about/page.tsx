@@ -203,7 +203,10 @@ export default function About() {
                     <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
                       {experience.role}
                     </Text>
-                    <Column as="ul" gap="16">
+                    <Text variant="body-default-s" onBackground="neutral-weak" marginBottom="m">
+                      {experience.description}
+                    </Text>
+                    <Column as="ul" gap="8">
                       {experience.achievements.map((achievement: JSX.Element, index: number) => (
                         <Text
                           as="li"
@@ -252,13 +255,21 @@ export default function About() {
                 {about.studies.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
-                {about.studies.institutions.map((institution, index) => (
-                  <Column key={`${institution.name}-${index}`} fillWidth gap="4">
-                    <Text id={institution.name} variant="heading-strong-l">
-                      {institution.name}
+                {about.studies.institutions.map((instruction, index) => (
+                  <Column key={`${instruction.name}-${instruction.description}-${index}`} fillWidth>
+                    <Flex fillWidth horizontal="space-between" vertical="end" marginBottom="4">
+                      <Text id={instruction.name} variant="heading-strong-l">
+                        {instruction.name}
+                      </Text>
+                      <Text variant="heading-default-xs" onBackground="neutral-weak">
+                        {instruction.vote}
+                      </Text>
+                    </Flex>
+                    <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
+                      {instruction.description}
                     </Text>
-                    <Text variant="heading-default-xs" onBackground="neutral-weak">
-                      {institution.description}
+                    <Text variant="body-default-s" onBackground="neutral-weak" marginBottom="m">
+                      {instruction.location}
                     </Text>
                   </Column>
                 ))}
@@ -279,36 +290,15 @@ export default function About() {
               <Column fillWidth gap="l">
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text variant="heading-strong-l">{skill.title}</Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
-                      {skill.description}
-                    </Text>
-                    {skill.images && skill.images.length > 0 && (
-                      <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
-                          <Flex
-                            key={index}
-                            border="neutral-medium"
-                            radius="m"
-                            //@ts-ignore
-                            minWidth={image.width}
-                            //@ts-ignore
-                            height={image.height}
-                          >
-                            <SmartImage
-                              enlarge
-                              radius="m"
-                              //@ts-ignore
-                              sizes={image.width.toString()}
-                              //@ts-ignore
-                              alt={image.alt}
-                              //@ts-ignore
-                              src={image.src}
-                            />
-                          </Flex>
-                        ))}
-                      </Flex>
-                    )}
+                    <Flex vertical="start">
+                      <Icon onBackground="neutral-strong" name={skill.icon} />
+                      <Column paddingLeft="8">
+                        <Text variant="heading-strong-l">{skill.title}</Text>
+                        <Text variant="body-default-m" onBackground="neutral-weak">
+                          {skill.description}
+                        </Text>
+                    </Column>
+                    </Flex>
                   </Column>
                 ))}
               </Column>
