@@ -7,7 +7,7 @@ import { Fade, Flex, Line, ToggleButton } from "@/once-ui/components";
 import styles from "@/components/Header.module.scss";
 
 import { routes, display } from "@/app/resources";
-import { person, about, blog, work, gallery } from "@/app/resources/content";
+import { person, about, projects, swimming, contacts } from "@/app/resources/content";
 import { ThemeToggle } from "./ThemeToggle";
 
 type TimeDisplayProps = {
@@ -93,54 +93,54 @@ export const Header = () => {
                   />
                 </>
               )}
-              {routes["/work"] && (
+              {routes["/projects"] && (
                 <>
                   <ToggleButton
                     className="s-flex-hide"
-                    prefixIcon="grid"
-                    href="/work"
-                    label={work.label}
-                    selected={pathname.startsWith("/work")}
+                    prefixIcon="project"
+                    href="/projects"
+                    label={projects.label}
+                    selected={pathname.startsWith("/projects")}
                   />
                   <ToggleButton
                     className="s-flex-show"
                     prefixIcon="grid"
-                    href="/work"
-                    selected={pathname.startsWith("/work")}
+                    href="/projects"
+                    selected={pathname.startsWith("/projects")}
                   />
                 </>
               )}
-              {routes["/blog"] && (
+              {routes["/swimming"] && (
                 <>
                   <ToggleButton
                     className="s-flex-hide"
-                    prefixIcon="book"
-                    href="/blog"
-                    label={blog.label}
-                    selected={pathname.startsWith("/blog")}
+                    prefixIcon="water"
+                    href="/swimming"
+                    label={swimming.label}
+                    selected={pathname.startsWith("/swimming")}
                   />
                   <ToggleButton
                     className="s-flex-show"
-                    prefixIcon="book"
-                    href="/blog"
-                    selected={pathname.startsWith("/blog")}
+                    prefixIcon="water"
+                    href="/swimming"
+                    selected={pathname.startsWith("/swimming")}
                   />
                 </>
               )}
-              {routes["/gallery"] && (
+              {routes["/contacts"] && (
                 <>
                   <ToggleButton
                     className="s-flex-hide"
-                    prefixIcon="gallery"
-                    href="/gallery"
-                    label={gallery.label}
-                    selected={pathname.startsWith("/gallery")}
+                    prefixIcon="contact"
+                    href="/contacts"
+                    label={contacts.label}
+                    selected={pathname.startsWith("/contacts")}
                   />
                   <ToggleButton
                     className="s-flex-show"
-                    prefixIcon="gallery"
-                    href="/gallery"
-                    selected={pathname.startsWith("/gallery")}
+                    prefixIcon="contact"
+                    href="/contacts"
+                    selected={pathname.startsWith("/contacts")}
                   />
                 </>
               )}

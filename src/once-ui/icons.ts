@@ -17,7 +17,7 @@ import {
   HiCheckCircle,
   HiMiniGlobeAsiaAustralia,
   HiArrowTopRightOnSquare,
-  HiEnvelope,
+  HiOutlineEnvelope,
   HiCalendarDays,
   HiClipboard,
   HiArrowRight,
@@ -26,6 +26,8 @@ import {
   HiMoon,
   HiSun,
   HiOutlineDocument,
+  HiOutlineBriefcase,
+  HiOutlineChatBubbleOvalLeft,
 } from "react-icons/hi2";
 
 import {
@@ -36,7 +38,9 @@ import {
   PiImageDuotone,
 } from "react-icons/pi";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaX } from "react-icons/fa6";
+import { FaDiscord, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+
+import { IoWaterOutline } from "react-icons/io5";
 
 export const iconLibrary: Record<string, IconType> = {
   chevronUp: HiChevronUp,
@@ -52,7 +56,7 @@ export const iconLibrary: Record<string, IconType> = {
   warningTriangle: HiExclamationTriangle,
   errorCircle: HiExclamationCircle,
   checkCircle: HiCheckCircle,
-  email: HiEnvelope,
+  email: HiOutlineEnvelope,
   globe: HiMiniGlobeAsiaAustralia,
   person: PiUserCircleDuotone,
   grid: PiGridFourDuotone,
@@ -67,12 +71,15 @@ export const iconLibrary: Record<string, IconType> = {
   eyeOff: HiOutlineEyeSlash,
   github: FaGithub,
   linkedin: FaLinkedin,
-  x: FaX,
+  x: FaXTwitter,
   clipboard: HiClipboard,
   arrowUpRightFromSquare: HiArrowTopRightOnSquare,
   moon: HiMoon,
   sun: HiSun,
   document: HiOutlineDocument,
+  project: HiOutlineBriefcase,
+  contact: HiOutlineChatBubbleOvalLeft,
+  water: IoWaterOutline,
 };
 
 export type IconLibrary = typeof iconLibrary;

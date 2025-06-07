@@ -4,9 +4,9 @@ const baseURL = "https://demo.magic-portfolio.com";
 const routes = {
   "/": true,
   "/about": true,
-  "/work": true,
-  "/blog": true,
-  "/gallery": true,
+  "/projects": true,
+  "/swimming": true,
+  "/contacts": true,
 };
 
 // Enable password protection on selected routes
@@ -15,16 +15,16 @@ const protectedRoutes = {
   "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
 };
 
-import { Geist } from "next/font/google";
-import { Geist_Mono } from "next/font/google";
+import { Alexandria } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 
-const primaryFont = Geist({
+const primaryFont = Alexandria({
   variable: "--font-primary",
   subsets: ["latin"],
   display: "swap",
 });
 
-const monoFont = Geist_Mono({
+const monoFont = JetBrains_Mono({
   variable: "--font-code",
   subsets: ["latin"],
   display: "swap",
@@ -41,7 +41,7 @@ const style = {
   theme: "dark", // theme is not necessary when using ThemeProvider (default)
   neutral: "gray", // sand | gray | slate
   brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-  accent: "red", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  accent: "aqua", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
   solid: "contrast", // color | contrast
   solidStyle: "flat", // flat | plastic
   border: "playful", // rounded | playful | conservative
