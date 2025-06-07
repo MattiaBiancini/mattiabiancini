@@ -227,15 +227,15 @@ const projects = {
       title: "Formula 1 Visualization",
       technologies: [
         {
-          name: "Python",
+          name: "python",
           link: "https://www.python.org/",
         },
         {
-          name: "Polars",
+          name: "polars",
           link: "https://pola.rs/",
         },
         {
-          name: "Bokeh",
+          name: "bokeh",
           link: "https://bokeh.org/",
         },
       ],
@@ -270,23 +270,23 @@ const projects = {
       title: "DataManagmentAsteroids",
       technologies: [
         {
-          name: "Python",
+          name: "python",
           link: "https://www.python.org/",
         },
         {
-          name: "Jupyter",
+          name: "jupyter",
           link: "https://jupyter.org/",
         },
         {
-          name: "Pandas",
+          name: "pandas",
           link: "https://pandas.pydata.org/",
         },
         {
-          name: "Mathplotlib",
+          name: "matplotlib",
           link: "https://matplotlib.org/",
         },
         {
-          name: "Shap",
+          name: "shap",
           link: "https://shap.readthedocs.io/",
         },
       ],
