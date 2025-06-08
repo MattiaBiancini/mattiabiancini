@@ -7,6 +7,7 @@ const routes = {
   "/projects": true,
   "/swimming": true,
   "/contacts": true,
+  "/projects/performance-variability": true
 };
 
 // Enable password protection on selected routes

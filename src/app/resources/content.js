@@ -44,16 +44,15 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Mens sana in corpore sano</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Performance Variability</strong></>,
+    title: <>Master Thesis: <strong className="ml-4">Performance Variability</strong></>,
     href: "/projects/performance-variability",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm {person.firstName}, a {person.role} based in Lugano, Switzerland.
     </>
   ),
 };
