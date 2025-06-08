@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Avatar,
   Background,
@@ -16,6 +18,10 @@ import { baseURL } from "@/app/resources";
 import { about, person, projects } from "@/app/resources/content";
 import { Meta, Schema } from "@/once-ui/modules";
 import OverlappingAvatars from "@/components/projects/OverlappingAvatars";
+import { useMediaQuery } from 'react-responsive'
+import { useEffect, useState } from "react";
+
+const isMobile = useMediaQuery({ maxWidth: 768 });
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -28,6 +34,15 @@ export async function generateMetadata() {
 }
 
 export default function Project() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const updateSize = () => setIsMobile(window.innerWidth < 768);
+    updateSize();
+    window.addEventListener("resize", updateSize);
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+
   return (
     <Column maxWidth="m">
       <Schema
@@ -43,61 +58,104 @@ export default function Project() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-	  <Column style={{ gap: "2em" }}>
-		{projects.projects.map((project, index) => (
-			<Column key={index} style={{ gap: "8px" }}>
-        <Flex
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr auto 1fr',
-            alignItems: 'center',
-          }}
-        >
-          <Flex style={{ justifySelf: 'start' }}>
-            <Heading as="h3" style={{ verticalAlign: "middle" }}>
-            {project.title}
-            {project.opensource && (
-              <>
-                &nbsp;[<a href={project.link}>
-                  <Icon onBackground="neutral-strong" name={project.icon} />
-                </a>]
-              </>
-            )}
-            </Heading>
-          </Flex>
-          <Flex style={{ justifySelf: 'center' }}>
-            <Row style={{ gap: "1em" }}>
-              {project.technologies.map((tech, techIndex) => (
-                <Flex
-                  key={techIndex}
-                  background="info-strong"
-                  border="neutral-alpha-medium"
-                  radius="m-4"
-                  shadow="l"
-                  padding="4"
-                  horizontal="center"
-                >
-                  <a href={tech.link} style={{ width: 24, height: 24 }}>
-                    <img
-                      src={`/svg/${tech.name}.svg`}
-                      width={24}
-                      height={24}
-                    />
-                  </a>
+
+      <Column style={{ gap: "2em" }}>
+        {projects.projects.map((project, index) => (
+          <Column key={index} style={{ gap: "8px" }}>
+            <Flex
+              style={{
+                display: "grid",
+                gridTemplateColumns: isMobile ? "1fr auto" : "1fr auto 1fr",
+                alignItems: "center",
+              }}
+            >
+              <Flex style={{ justifySelf: "start" }}>
+                <Heading as="h3" style={{ verticalAlign: "middle" }}>
+                  {project.title}
+                  {project.opensource && (
+                    <>
+                      &nbsp;[
+                      <a href={project.link}>
+                        <Icon
+                          onBackground="neutral-strong"
+                          name={project.icon}
+                        />
+                      </a>
+                      ]
+                    </>
+                  )}
+                </Heading>
+              </Flex>
+
+              {!isMobile && (
+                <Flex style={{ justifySelf: "center" }}>
+                  <Row style={{ gap: "1em" }}>
+                    {project.technologies.map((tech, techIndex) => (
+                      <Flex
+                        key={techIndex}
+                        background="info-strong"
+                        border="neutral-alpha-medium"
+                        radius="m-4"
+                        shadow="l"
+                        padding="4"
+                        horizontal="center"
+                      >
+                        <a href={tech.link} style={{ width: 24, height: 24 }}>
+                          <img
+                            src={`/svg/${tech.name}.svg`}
+                            width={24}
+                            height={24}
+                            alt={tech.name}
+                          />
+                        </a>
+                      </Flex>
+                    ))}
+                  </Row>
                 </Flex>
-              ))}
-            </Row>
-          </Flex>
-          <Flex style={{ justifySelf: 'end' }}>
-            <OverlappingAvatars developers={project.developers} />
-          </Flex>
-        </Flex>
-				<Row style={{ alignItems: "center", justifyContent: "space-between" }}>
-				</Row>
-				<Text variant="heading-default-xs" onBackground="neutral-weak">{project.description}</Text>
-			</Column>
-		))}
-	  </Column>
+              )}
+
+              <Flex style={{ justifySelf: "end" }}>
+                <OverlappingAvatars developers={project.developers} />
+              </Flex>
+            </Flex>
+
+            {/* Mobile-only: technologies row below title */}
+            {isMobile && (
+              <Flex style={{ justifyContent: "start", marginTop: 8 }}>
+                <Row style={{ gap: "1em" }}>
+                  {project.technologies.map((tech, techIndex) => (
+                    <Flex
+                      key={techIndex}
+                      background="info-strong"
+                      border="neutral-alpha-medium"
+                      radius="m-4"
+                      shadow="l"
+                      padding="4"
+                      horizontal="center"
+                    >
+                      <a href={tech.link} style={{ width: 24, height: 24 }}>
+                        <img
+                          src={`/svg/${tech.name}.svg`}
+                          width={24}
+                          height={24}
+                          alt={tech.name}
+                        />
+                      </a>
+                    </Flex>
+                  ))}
+                </Row>
+              </Flex>
+            )}
+
+            <Text
+              variant="heading-default-xs"
+              onBackground="neutral-weak"
+            >
+              {project.description}
+            </Text>
+          </Column>
+        ))}
+      </Column>
     </Column>
   );
 }
