@@ -267,7 +267,7 @@ const projects = {
       ],
     },
     {
-      title: "DataManagmentAsteroids",
+      title: "Data Managment Asteroids",
       technologies: [
         {
           name: "python",
@@ -311,6 +311,178 @@ const projects = {
           name: "ghero2000",
         },
       ],
+    },
+    {
+      title: "Indoor Navigation",
+      technologies: [
+        {
+          name: "android",
+          link: "https://www.android.com/",
+        },
+      ],
+      opensource: true,
+      description: (
+        <>
+          IndoorNavigation is an Android application designed to assist users in navigating indoor spaces of
+          <a href="https://www.unimib.it/"> UNIMIB</a> university campus. This was a project developed under
+          the supervision of professors <a href="https://www.unimib.it/daniela-micucci">Daniela Micucci</a> and
+          <a href="https://www.unimib.it/davide-ginelli">Davide Ginelli</a> as our bechelor thesis.
+          The app utilizes indoor positioning techniques to provide accurate navigation within the university buildings,
+          helping students and visitors find their way to classrooms, offices, and other facilities.
+        </>
+      ),
+      link: "https://gitlab.com/unimib-wayfinding/indoor-navigation-biancini-gargiulo",
+      icon: "gitlab",
+      developers: [
+        {
+          name: "Zeptogram",
+        }
+      ],
+
+    },
+    {
+      title: "Image Compression",
+      technologies: [
+        {
+          name: "python",
+          link: "https://www.python.org/",
+        },
+      ],
+      opensource: true,
+      description: (
+        <>
+          ImageCompression is a project that implements a DCT 2 algorithm for image compression.
+          The repository includes in part1 the implementation of the DCT 2 algorithm and the 
+          comparison with the DCT2 algorithm from the scipy library.
+          In part2, the project focuses on the implementation of a JPEG compression algorithm,
+          including a program that compresses an image using the JPEG algorithm and shows the
+          difference between the original and compressed images.
+          The goal is to demonstrate the effectiveness of the DCT 2 algorithm in compressing images
+          and to provide a practical implementation of JPEG compression techniques.
+        </>
+      ),
+      link: "https://github.com/Zeptogram/ImageCompression",
+      icon: "github",
+      developers: [
+        {
+          name: "Zeptogram",
+        }
+      ],
+
+    },
+    {
+      title: "PC Builder",
+      technologies: [
+        {
+          name: "Android",
+          link: "https://www.android.com/",
+        },
+      ],
+      opensource: true,
+      description: (
+        <>
+          PC Builder is an Android application designed to help users build their own custom PCs.
+          The app provides a user-friendly interface for selecting components, checking compatibility,
+          and visualizing the final build. It includes a database of components, such as CPUs, GPUs,
+          motherboards, and peripherals, allowing users to explore different configurations and
+          make informed decisions based on their needs and budget. The goal is to simplify the PC building
+          process for both beginners and experienced users, providing a comprehensive tool for planning and
+          executing custom PC builds.
+        </>
+      ),
+      link: "https://github.com/umbyf117/PCBuilder",
+      icon: "github",
+      developers: [
+        {
+          name: "umbyf117",
+        }
+      ],
+
+    },
+    {
+      title: "Linear System Library",
+      technologies: [
+        {
+          name: "python",
+          link: "https://www.python.org/",
+        },
+      ],
+      opensource: true,
+      description: (
+        <>
+          Linear System Library is a project that provides a library for solving linear systems of equations.
+          The repository includes implementations of various algorithms for solving linear systems,
+          such as Gaussian elimination, LU decomposition, and iterative methods.
+          The goal is to provide a comprehensive library for solving linear systems,
+          which can be used in various applications, such as numerical simulations, optimization problems, 
+          and data analysis.
+        </>
+      ),
+      link: "https://github.com/MattiaBiancini/LinearSystemLibrary",
+      icon: "github",
+      developers: [
+        {
+          name: "Zeptogram",
+        }
+      ],
+
+    },
+    {
+      title: "My Website",
+      technologies: [
+        {
+          name: "javascript",
+          link: "https://www.javascript.com/",
+        },
+        {
+          name: "typescript",
+          link: "https://www.typescriptlang.org/",
+        },
+        {
+          name: "react",
+          link: "https://reactjs.org/",
+        },
+        {
+          name: "css",
+          link: "https://www.w3.org/Style/CSS/",
+        },
+        {
+          name: "html",
+          link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        },
+      ],
+      opensource: false,
+      description: (
+        <>
+          This is my personal portfolio website, built with React and TypeScript. 
+          It showcases my projects, skills, and experiences in a modern and responsive design.
+          The website is designed to be user-friendly and visually appealing, 
+          providing a platform to highlight my work and connect with others.
+        </>
+      ),
+      link: "https://github.com/MattiaBiancini/mattiabiancini",
+      icon: "github",
+      developers: [],
+    },
+    {
+      title: "RPGarnet",
+      technologies: [
+        {
+          name: "java",
+          link: "https://www.java.com/",
+        },
+      ],
+      opensource: true,
+      description: (
+        <>
+          RPGarnet is a Minecraft plugin that adds RPG elements to the game. 
+          It allows players to create and manage their own RPG adventures within 
+          the Minecraft world, complete with quests, NPCs, and custom items.
+        </>
+      ),
+      link: "https://github.com/MattiaBiancini/RPGarnet",
+      icon: "github",
+      developers: [],
     },
   ]
 

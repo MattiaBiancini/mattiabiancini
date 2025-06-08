@@ -38,7 +38,7 @@ import {
   PiImageDuotone,
 } from "react-icons/pi";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaDiscord, FaGithub, FaGitlab, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 import { IoWaterOutline } from "react-icons/io5";
 
@@ -95,6 +95,7 @@ export const iconLibrary: Record<string, IconType> = {
   android: DiAndroid,
   docker: DiDocker,
   javascript: DiJsBadge,
+  gitlab: FaGitlab,
 };
 
 export type IconLibrary = typeof iconLibrary;
