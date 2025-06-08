@@ -137,6 +137,7 @@ export default function Project() {
             <Text
               variant="heading-default-xs"
               onBackground="neutral-weak"
+              align="justify"
             >
               {project.description}
             </Text>
