@@ -1,5 +1,5 @@
 // app/projects/page.tsx
-import Project from './ProjectClient'; // import the client component
+import Project from './project'; // import the client component
 import { baseURL } from "@/app/resources";
 import { about, person, projects } from "@/app/resources/content";
 import { Meta, Schema } from "@/once-ui/modules";
