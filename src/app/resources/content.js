@@ -323,10 +323,8 @@ const projects = {
       opensource: true,
       description: (
         <>
-          IndoorNavigation is an Android application designed to assist users in navigating indoor spaces of
-          <a href="https://www.unimib.it/"> UNIMIB</a> university campus. This was a project developed under
-          the supervision of professors <a href="https://www.unimib.it/daniela-micucci">Daniela Micucci</a> and
-          <a href="https://www.unimib.it/davide-ginelli">Davide Ginelli</a> as our bechelor thesis.
+          IndoorNavigation is an Android application designed to assist users in navigating indoor spaces of <a href="https://www.unimib.it/"> UNIMIB</a> university campus. This was a project developed under
+          the supervision of professors <a href="https://www.unimib.it/daniela-micucci">Daniela Micucci</a> and <a href="https://www.unimib.it/davide-ginelli">Davide Ginelli</a> as our bachelor thesis.
           The app utilizes indoor positioning techniques to provide accurate navigation within the university buildings,
           helping students and visitors find their way to classrooms, offices, and other facilities.
         </>
