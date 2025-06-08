@@ -111,6 +111,21 @@ const about = {
             Spring Italian Championships 2024 (Criteria)
           </>,
           <>
+            Summer Lifesaving Italian Championships 2025 (Criteria)
+          </>,
+          <>
+            Spring Lifesaving Italian Championships 2025 (Women & Man)
+          </>,
+          <>
+            Spring Lifesaving Italian Championships 2025 (Criteria)
+          </>,
+          <>
+            Summer Lifesaving Italian Championships 2024 (Criteria)
+          </>,
+          <>
+            Spring Lifesaving Italian Championships 2024 (Criteria)
+          </>,
+          <>
             Spring Regional Championships 2025
           </>,
           <>
