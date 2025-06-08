@@ -100,7 +100,7 @@ export default function Home() {
               Some of my interests
             </Heading>
           </RevealFx>
-          <RevealFx paddingTop="8" delay={0.2} horizontal="start" paddingLeft="12">
+          <RevealFx paddingTop="8" delay={0.2} horizontal="start" paddingLeft="16" paddingRight="16">
             <Text onBackground="neutral-weak" variant="label-default-m" align="justify">
               If I am not working on my projects, you can find me either swimming in the pool,
               playing team-based games, or learning.
