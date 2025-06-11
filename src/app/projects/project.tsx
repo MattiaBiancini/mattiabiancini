@@ -19,6 +19,7 @@ import { about, person, projects } from "@/app/resources/content";
 import { Meta, Schema } from "@/once-ui/modules";
 import OverlappingAvatars from "@/components/projects/OverlappingAvatars";
 import { useEffect, useState } from "react";
+import SmartImageWithHoverText from "@/components/SmartImageWithHoverText";
 
 export default function Project() {
   const [isMobile, setIsMobile] = useState(false);
@@ -78,24 +79,7 @@ export default function Project() {
                 <Flex style={{ justifySelf: "center" }}>
                   <Row style={{ gap: "1em" }}>
                     {project.technologies.map((tech, techIndex) => (
-                      <Flex
-                        key={techIndex}
-                        background="info-strong"
-                        border="neutral-alpha-medium"
-                        radius="m-4"
-                        shadow="l"
-                        padding="4"
-                        horizontal="center"
-                      >
-                        <a href={tech.link} style={{ width: 24, height: 24 }}>
-                          <img
-                            src={`/svg/${tech.name}.svg`}
-                            width={24}
-                            height={24}
-                            alt={tech.name}
-                          />
-                        </a>
-                      </Flex>
+                      <SmartImageWithHoverText name={tech.name} link={tech.link} key={techIndex} />
                     ))}
                   </Row>
                 </Flex>
@@ -111,24 +95,7 @@ export default function Project() {
               <Flex style={{ justifyContent: "start", marginTop: 8 }}>
                 <Row style={{ gap: "1em" }}>
                   {project.technologies.map((tech, techIndex) => (
-                    <Flex
-                      key={techIndex}
-                      background="info-strong"
-                      border="neutral-alpha-medium"
-                      radius="m-4"
-                      shadow="l"
-                      padding="4"
-                      horizontal="center"
-                    >
-                      <a href={tech.link} style={{ width: 24, height: 24 }}>
-                        <img
-                          src={`/svg/${tech.name}.svg`}
-                          width={24}
-                          height={24}
-                          alt={tech.name}
-                        />
-                      </a>
-                    </Flex>
+                      <SmartImageWithHoverText name={tech.name} link={tech.link} key={techIndex} />
                   ))}
                 </Row>
               </Flex>
