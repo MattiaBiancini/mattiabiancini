@@ -10,6 +10,7 @@ const person = {
   avatar: "/images/avatar.png",
   email: "biancinimattia14@gmail.com",
   location: "Switzerland/Lugano", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  phone: "+41 78 305 41 49",
   languages: [], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -138,7 +139,7 @@ const about = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/work/insport.jpeg",
+            src: "/images/work/insport/insport.jpeg",
             alt: "InSport - Lifesaving Spring Italian Championships 2025",
             width: 16,
             height: 9,
@@ -251,6 +252,10 @@ const projects = {
         {
           name: "bokeh",
           link: "https://bokeh.org/",
+        },
+        {
+          name: "figma",
+          link: "https://www.figma.com/",
         },
       ],
       opensource: true,
@@ -514,6 +519,21 @@ const contacts = {
   label: "Contacts",
   title: `Contacts – ${person.name}`,
   description: `A collection of contact information for ${person.name}`,
+  image: "/images/contact.jpg",
+  contacts: [
+    {
+      name: person.phone,
+      icon: "phone",
+    },
+    {
+      name: person.email,
+      icon: "email",
+    },
+    {
+      name: person.location,
+      icon: "globe",
+    }
+  ]
 };
 
 export { person, social, home, about, projects, swimming, contacts };

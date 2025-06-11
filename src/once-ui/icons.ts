@@ -28,6 +28,7 @@ import {
   HiOutlineDocument,
   HiOutlineBriefcase,
   HiOutlineChatBubbleOvalLeft,
+  HiOutlinePhone,
 } from "react-icons/hi2";
 
 import {
@@ -96,6 +97,7 @@ export const iconLibrary: Record<string, IconType> = {
   docker: DiDocker,
   javascript: DiJsBadge,
   gitlab: FaGitlab,
+  phone: HiOutlinePhone,
 };
 
 export type IconLibrary = typeof iconLibrary;

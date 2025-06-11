@@ -1,6 +1,7 @@
 import {
   Avatar,
   Button,
+  Carousel,
   Column,
   Flex,
   Heading,
@@ -191,7 +192,7 @@ export default function About() {
                     </Column>
                     {experience.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
-                        {experience.images.map((image, index) => (
+                        {/* {experience.images.map((image, index) => (
                           <Flex
                             key={index}
                             border="neutral-medium"
@@ -201,6 +202,7 @@ export default function About() {
                             //@ts-ignore
                             height={image.height}
                           >
+                            
                             <SmartImage
                               enlarge
                               radius="m"
@@ -212,7 +214,14 @@ export default function About() {
                               src={image.src}
                             />
                           </Flex>
-                        ))}
+                        ))} */}
+                        <Carousel
+                          sizes="(max-width: 960px) 100vw, 960px"
+                          images={experience.images.map((image) => ({
+                            src: image.src,
+                            alt: image.alt,
+                          }))}
+                        />
                       </Flex>
                     )}
                   </Column>
