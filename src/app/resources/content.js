@@ -25,7 +25,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/mattia-biancini-a879731a7/",
+    link: "https://www.linkedin.com/in/mattia-biancini/",
   },
   {
     name: "X",
