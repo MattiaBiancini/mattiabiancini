@@ -5,9 +5,9 @@ const routes = {
   "/": true,
   "/about": true,
   "/projects": true,
-  "/swimming": true,
+  "/swimming": false,
   "/contacts": true,
-  "/projects/performance-variability": true
+  "/projects/performance-variability": false,
 };
 
 // Enable password protection on selected routes
