@@ -242,7 +242,7 @@ const projects = {
       title: "Formula 1 Visualization",
       technologies: [
         {
-          name: "Python",
+          name: "python",
           link: "https://www.python.org/",
         },
         {
@@ -254,7 +254,7 @@ const projects = {
           link: "https://bokeh.org/",
         },
         {
-          name: "Figma",
+          name: "figma",
           link: "https://www.figma.com/",
         },
       ],
@@ -289,11 +289,11 @@ const projects = {
       title: "Data Managment Asteroids",
       technologies: [
         {
-          name: "Python",
+          name: "python",
           link: "https://www.python.org/",
         },
         {
-          name: "Jupyter",
+          name: "jupyter",
           link: "https://jupyter.org/",
         },
         {
@@ -305,7 +305,7 @@ const projects = {
           link: "https://matplotlib.org/",
         },
         {
-          name: "Shap",
+          name: "shap",
           link: "https://shap.readthedocs.io/",
         },
       ],
@@ -335,7 +335,7 @@ const projects = {
       title: "Indoor Navigation",
       technologies: [
         {
-          name: "Android",
+          name: "android",
           link: "https://www.android.com/",
         },
       ],
@@ -361,7 +361,7 @@ const projects = {
       title: "Image Compression",
       technologies: [
         {
-          name: "Python",
+          name: "python",
           link: "https://www.python.org/",
         },
       ],
@@ -391,7 +391,7 @@ const projects = {
       title: "PC Builder",
       technologies: [
         {
-          name: "Android",
+          name: "android",
           link: "https://www.android.com/",
         },
       ],
@@ -420,7 +420,7 @@ const projects = {
       title: "Linear System Library",
       technologies: [
         {
-          name: "Python",
+          name: "python",
           link: "https://www.python.org/",
         },
       ],
@@ -448,7 +448,7 @@ const projects = {
       title: "Species Comparison",
       technologies: [
         {
-          name: "Python",
+          name: "python",
           link: "https://www.python.org/",
         }
       ],
@@ -469,11 +469,11 @@ const projects = {
       title: "URI Parser",
       technologies: [
         {
-          name: "Prolog",
+          name: "prolog",
           link: "https://www.swi-prolog.org/",
         },
         {
-          name: "Lisp",
+          name: "lisp",
           link: "https://lisp-lang.org/",
         }
       ],
