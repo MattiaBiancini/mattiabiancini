@@ -242,7 +242,7 @@ const projects = {
       title: "Formula 1 Visualization",
       technologies: [
         {
-          name: "python",
+          name: "Python",
           link: "https://www.python.org/",
         },
         {
@@ -254,7 +254,7 @@ const projects = {
           link: "https://bokeh.org/",
         },
         {
-          name: "figma",
+          name: "Figma",
           link: "https://www.figma.com/",
         },
       ],
@@ -289,11 +289,11 @@ const projects = {
       title: "Data Managment Asteroids",
       technologies: [
         {
-          name: "python",
+          name: "Python",
           link: "https://www.python.org/",
         },
         {
-          name: "jupyter",
+          name: "Jupyter",
           link: "https://jupyter.org/",
         },
         {
@@ -305,7 +305,7 @@ const projects = {
           link: "https://matplotlib.org/",
         },
         {
-          name: "shap",
+          name: "Shap",
           link: "https://shap.readthedocs.io/",
         },
       ],
@@ -335,7 +335,7 @@ const projects = {
       title: "Indoor Navigation",
       technologies: [
         {
-          name: "android",
+          name: "Android",
           link: "https://www.android.com/",
         },
       ],
@@ -361,7 +361,7 @@ const projects = {
       title: "Image Compression",
       technologies: [
         {
-          name: "python",
+          name: "Python",
           link: "https://www.python.org/",
         },
       ],
@@ -391,7 +391,7 @@ const projects = {
       title: "PC Builder",
       technologies: [
         {
-          name: "android",
+          name: "Android",
           link: "https://www.android.com/",
         },
       ],
@@ -420,7 +420,7 @@ const projects = {
       title: "Linear System Library",
       technologies: [
         {
-          name: "python",
+          name: "Python",
           link: "https://www.python.org/",
         },
       ],
@@ -445,26 +445,71 @@ const projects = {
 
     },
     {
+      title: "Species Comparison",
+      technologies: [
+        {
+          name: "Python",
+          link: "https://www.python.org/",
+        }
+      ],
+      opensource: false,
+      description: (
+        <>
+          The project consists of the elaboration of phylogenetic trees in
+          to which the distance between species is calculated and for each quartet the
+          closest species pair is identified. The goal is to provide a comprehensive tool for
+          analyzing evolutionary relationships and visualizing species comparisons.
+        </>
+      ),
+      link: "",
+      icon: "",
+      developers: [],
+    },
+    {
+      title: "URI Parser",
+      technologies: [
+        {
+          name: "Prolog",
+          link: "https://www.swi-prolog.org/",
+        },
+        {
+          name: "Lisp",
+          link: "https://lisp-lang.org/",
+        }
+      ],
+      opensource: false,
+      description: (
+        <>
+          URI Parser is a project that implements a parser for Uniform Resource Identifiers (URIs)
+          in both Prolog and common Lisp. The goal is to provide a flexible and extensible parser
+          that can handle various URI formats and use cases.
+        </>
+      ),
+      link: "",
+      icon: "",
+      developers: [],
+    },
+    {
       title: "My Website",
       technologies: [
         {
-          name: "javascript",
+          name: "JavaScript",
           link: "https://www.javascript.com/",
         },
         {
-          name: "typescript",
+          name: "TypeScript",
           link: "https://www.typescriptlang.org/",
         },
         {
-          name: "react",
+          name: "React",
           link: "https://reactjs.org/",
         },
         {
-          name: "css",
+          name: "CSS",
           link: "https://www.w3.org/Style/CSS/",
         },
         {
-          name: "html",
+          name: "HTML",
           link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
         },
       ],
@@ -485,7 +530,7 @@ const projects = {
       title: "RPGarnet",
       technologies: [
         {
-          name: "java",
+          name: "Java",
           link: "https://www.java.com/",
         },
       ],
