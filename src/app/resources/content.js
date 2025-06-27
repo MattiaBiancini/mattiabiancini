@@ -493,23 +493,23 @@ const projects = {
       title: "My Website",
       technologies: [
         {
-          name: "JavaScript",
+          name: "javascript",
           link: "https://www.javascript.com/",
         },
         {
-          name: "TypeScript",
+          name: "typescript",
           link: "https://www.typescriptlang.org/",
         },
         {
-          name: "React",
+          name: "react",
           link: "https://reactjs.org/",
         },
         {
-          name: "CSS",
+          name: "css",
           link: "https://www.w3.org/Style/CSS/",
         },
         {
-          name: "HTML",
+          name: "html",
           link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
         },
       ],
@@ -530,7 +530,7 @@ const projects = {
       title: "RPGarnet",
       technologies: [
         {
-          name: "Java",
+          name: "java",
           link: "https://www.java.com/",
         },
       ],
