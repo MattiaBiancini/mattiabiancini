@@ -103,6 +103,9 @@ const about = {
         ),
         achievements: [
           <>
+            Summer Italian Championships 2025
+          </>,
+          <>
             Spring Italian Championships 2025 (Criteria)
           </>,
           <>
@@ -112,19 +115,25 @@ const about = {
             Spring Italian Championships 2024 (Criteria)
           </>,
           <>
-            Summer Lifesaving Italian Championships 2025 (Criteria)
+            Summer Lifesaving Italian Championships 2025 (Women & Man)
           </>,
           <>
             Spring Lifesaving Italian Championships 2025 (Women & Man)
           </>,
           <>
-            Spring Lifesaving Italian Championships 2025 (Criteria)
+            Summer Lifesaving Italian Championships 2025
           </>,
           <>
-            Summer Lifesaving Italian Championships 2024 (Criteria)
+            Spring Lifesaving Italian Championships 2025
           </>,
           <>
-            Spring Lifesaving Italian Championships 2024 (Criteria)
+            Summer Lifesaving Italian Championships 2024
+          </>,
+          <>
+            Spring Lifesaving Italian Championships 2024
+          </>,
+          <>
+            Summer Regional Championships 2025
           </>,
           <>
             Spring Regional Championships 2025
