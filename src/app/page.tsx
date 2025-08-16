@@ -45,7 +45,7 @@ export default function Home() {
         {home.featured && (
         <RevealFx fillWidth delay={0.2} horizontal="start" paddingTop="0" paddingBottom="32" paddingLeft="12">
           <Row horizontal="start" gap="m" style={{ alignItems: "center" }}>
-            <Text>I am actually working on:</Text>
+            <Text onBackground="neutral-strong">I am actually working on:</Text>
             <Badge background="brand-alpha-weak" paddingX="12" paddingY="4" onBackground="neutral-strong" textVariant="label-default-s" arrow={false}
               // href={home.featured.href}>
               >
@@ -83,7 +83,7 @@ export default function Home() {
           </Flex>
         </RevealFx>
         <RevealFx fillWidth delay={0.2} horizontal="start">
-          <Text variant="label-default-m" align="justify">
+          <Text onBackground="neutral-medium" variant="label-default-m" align="justify">
             I am driven by a constant pursuit of knowledge and a deep commitment to self-improvement. 
             As a mathematician and logical thinker, I approach challenges analytically 
             and always strive to find the most effective solutions. My strengths include 
