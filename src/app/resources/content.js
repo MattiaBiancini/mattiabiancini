@@ -9,8 +9,8 @@ const person = {
   role: "Computer Science Student",
   avatar: "/images/avatar.png",
   email: "biancinimattia14@gmail.com",
-  location: "Switzerland/Lugano", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  phone: "+41 78 305 41 49",
+  location: "Milan/Italy", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  phone: "+39 3884025444",
   languages: [], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -48,12 +48,12 @@ const home = {
   headline: <>Mens sana in corpore sano</>,
   featured: {
     display: true,
-    title: <>Master Thesis: <strong className="ml-4">Performance Variability</strong></>,
-    href: "/projects/performance-variability",
+    title: <><strong className="ml-4">NutriMate</strong>: A Diet Management App</>,
+    href: "/projects/nutri-mate",
   },
   subline: (
     <>
-      I'm {person.firstName}, a {person.role} based in Lugano, Switzerland.
+      I'm {person.firstName}, a {person.role} based in Milan, Italy.
     </>
   ),
 };
@@ -182,17 +182,17 @@ const about = {
     institutions: [
       {
         name: "Università della Svizzera italiana (USI)",
-        timeframe: "September 2024 - Present",
+        timeframe: "September 2024 - September 2025",
         description: <>Master in Informatics (Double Degree Program)</>,
         location: <>Lugano (CH)</>,
-        vote: <>-/10.0</>,
+        vote: <>9.8/10.0</>,
       },
       {
         name: "Università degli Studi di Milano - Bicocca",
-        timeframe: "September 2023 - Present",
+        timeframe: "September 2023 - September 2025",
         description: <>Master in Computer Science</>,
         location: <>Milan (IT)</>,
-        vote: <>-/110</>,
+        vote: <>108/110</>,
       },
       {
         name: "Università degli Studi di Milano - Bicocca",
@@ -227,11 +227,11 @@ const about = {
         description: <>Proficient in JavaScript for web development, including frameworks like React.</>,
         icon: "javascript",
       },
-      // {
-      //   title: "AndroidStudio",
-      //   description: <>Experienced in Android app development using Android Studio.</>,
-      //   icon: "android",
-      // },
+      {
+        title: "AndroidStudio",
+        description: <>Experienced in Android app development using Android Studio.</>,
+        icon: "android",
+      },
       {
         title: "Docker",
         description: <>Familiar with Docker for containerization and deployment.</>,
@@ -247,6 +247,87 @@ const projects = {
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   projects: [
+    {
+      title: "NutriMate",
+      technologies: [
+        {
+          name: "python",
+          link: "https://www.python.org/",
+        },
+        {
+          name: "javascript",
+          link: "https://www.javascript.com/",
+        },
+        { 
+          name: "react",
+          link: "https://reactjs.org/",
+        },
+        {
+          name: "sqlite",
+          link: "https://www.sqlite.org/index.html",
+        },
+        {
+          name: "polars",
+          link: "https://pola.rs/",
+        },
+      ],
+      opensource: false,
+      description: (
+        <>
+          NutriMate is a diet management application designed for dietists 
+          to create and manage personalized diet plans for their clients.
+          The app allows dietists to input client information, dietary 
+          preferences, and nutritional goals, and then generates tailored meal plans.
+          The goal of NutriMate is to streamline the diet planning process 
+          for dietists while promoting healthier lifestyles for their clients 
+          through personalized nutrition management.
+        </>
+      ),
+      link: "https://github.com/MattiaBiancini/NutriMate",
+      icon: "github",
+      developers: [],
+    },
+    {
+      title: "Performance Variability",
+      technologies: [
+        {
+          name: "java",
+          link: "https://www.java.com/",
+        },
+        {
+          name: "linux",
+          link: "https://www.linux.org/",
+        },
+        {
+          name: "python",
+          link: "https://www.python.org/",
+        },
+        {
+          name: "polars",
+          link: "https://pola.rs/",
+        },
+        {
+          name: "bokeh",
+          link: "https://bokeh.org/",
+        },
+        {
+          name: "matplotlib",
+          link: "https://matplotlib.org/",
+        },
+      ],
+      opensource: false,
+      description: (
+        <>
+          Performance Variability is a master thesis project that investigates the performance
+          variability of Java applications on Linux systems. The project aims to analyze 
+          and mitigate variability by a compiler's POV.
+          It is possible to read my thesis <a href="/documents/master_thesis.pdf" target="_blank" rel="noreferrer">here</a>.
+        </>
+      ),
+      link: "",
+      icon: "",
+      developers: [],
+    },
     {
       title: "Formula 1 Visualization",
       technologies: [
