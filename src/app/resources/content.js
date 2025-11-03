@@ -93,6 +93,16 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
+        company: "Open Reply",
+        timeframe: "November 2025 - Present",
+        role: "Full Stack Developer Intern",
+        description: (
+          <>
+            Using Liferay platform to develop and maintain web applications.
+          </>
+        ),
+      },
+      {
         company: "InSport Rane Rosse",
         timeframe: "November 2023 - Present",
         role: "Swimming Coach (FINA Junior & Senior)",
