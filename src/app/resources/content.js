@@ -101,6 +101,7 @@ const about = {
             Using Liferay platform to develop and maintain web applications.
           </>
         ),
+        achievements: [],
       },
       {
         company: "InSport Rane Rosse",
