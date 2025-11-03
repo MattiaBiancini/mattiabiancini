@@ -102,6 +102,7 @@ const about = {
           </>
         ),
         achievements: [],
+        images: [],
       },
       {
         company: "InSport Rane Rosse",
