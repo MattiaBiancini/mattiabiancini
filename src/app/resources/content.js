@@ -48,12 +48,12 @@ const home = {
   headline: <>Mens sana in corpore sano</>,
   featured: {
     display: true,
-    title: <><strong className="ml-4">NutriMate</strong>: A Diet Management App</>,
+    title: <><strong className="ml-4">SwimBit</strong>: A Swim Coach Management App</>,
     href: "/projects/nutri-mate",
   },
   subline: (
     <>
-      I'm {person.firstName}, a {person.role} based in Milan, Italy.
+      I'm {person.firstName}, a {person.role} based in Lugano, Switzerland.
     </>
   ),
 };
@@ -93,8 +93,20 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
+        company: "Lifeware",
+        timeframe: "November 2026 - Present",
+        role: "Software Engineer and IT Consultant",
+        description: (
+          <>
+            Using SmallTalk platform to develop and maintain IT services.
+          </>
+        ),
+        achievements: [],
+        images: [],
+      },
+      {
         company: "Open Reply",
-        timeframe: "November 2025 - Present",
+        timeframe: "November 2025 - Ottobre 2026",
         role: "Full Stack Developer Intern",
         description: (
           <>
@@ -114,6 +126,21 @@ const about = {
           </>
         ),
         achievements: [
+          <>
+            Italian Open Swimming Championships 2026
+          </>,
+          <>
+            Summer Italian Championships 2026
+          </>,
+          <>
+            Spring Italian Championships 2026 (Criteria)
+          </>,
+          <>
+            Summer Lifesaving Italian Championships 2026 (Women & Man)
+          </>,
+          <>
+            Winter Lifesaving Italian Championships 2026 (Women & Man)
+          </>,
           <>
             Summer Italian Championships 2025
           </>,
@@ -143,6 +170,12 @@ const about = {
           </>,
           <>
             Spring Lifesaving Italian Championships 2024
+          </>,
+          <>
+            Summer Regional Championships 2026
+          </>,
+          <>
+            Spring Regional Championships 2026
           </>,
           <>
             Summer Regional Championships 2025
